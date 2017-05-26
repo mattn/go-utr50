@@ -34,8 +34,8 @@ func main() {
 	defer resp.Body.Close()
 	scanner := bufio.NewScanner(resp.Body)
 
-	var oldfrom, from, to rune
-	var oldprop, prop string
+	var from, to rune
+	var prop string
 
 	fmt.Fprintln(output, `package utr50
 
@@ -65,12 +65,10 @@ var table = []struct {
 				continue
 			}
 			to = rune(u)
+		} else {
+			to = from
 		}
 		prop = strings.TrimSpace(token[1])
-		if prop == oldprop && from == oldfrom+1 {
-			to = from
-			continue
-		}
 		fmt.Fprintf(output, "\t{0x%X, 0x%X, %s},\n", from, to, prop)
 	}
 	fmt.Fprintln(output, "}")
