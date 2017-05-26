@@ -1,19 +1,19 @@
 package utr50
 
 //go:generate go run tool/generate.go -o table.go
-//go:generate stringer -type prop
+//go:generate stringer -type Prop
 
-type prop int
+type Prop int
 
 const (
-	N prop = iota
+	N Prop = iota
 	U
 	R
 	Tu
 	Tr
 )
 
-func Prop(r rune) prop {
+func RuneProp(r rune) Prop {
 	for _, t := range table {
 		if t.from <= r && r <= t.to {
 			return t.prop

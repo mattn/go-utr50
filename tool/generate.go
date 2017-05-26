@@ -32,7 +32,7 @@ func main() {
 		log.Fatal(err)
 	}
 	defer resp.Body.Close()
-	scanner := bufio.NewScanner(resp.Body)
+	scanner := bufio.NewScanner(bufio.NewReader(resp.Body))
 
 	var from, to rune
 	var prop string
@@ -42,7 +42,7 @@ func main() {
 var table = []struct {
 	from rune
 	to   rune
-	prop prop
+	prop Prop
 }{`)
 	for scanner.Scan() {
 		line := scanner.Text()

@@ -31,7 +31,7 @@ func TestSimple(t *testing.T) {
 	for _, test := range tests {
 		got := ""
 		for _, r := range test.input {
-			got += fmt.Sprint(Prop(r))
+			got += fmt.Sprint(RuneProp(r))
 		}
 		if got != test.want {
 			t.Fatalf("want %q, got %q: %q", test.want, got, test.input)

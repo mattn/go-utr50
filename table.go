@@ -3,7 +3,7 @@ package utr50
 var table = []struct {
 	from rune
 	to   rune
-	prop prop
+	prop Prop
 }{
 	{0x0, 0x1F, R},
 	{0x20, 0x20, R},
