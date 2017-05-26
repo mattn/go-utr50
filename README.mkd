@@ -2,7 +2,7 @@ go-utr50
 ========
 
 [![Build Status](https://travis-ci.org/mattn/go-utr50.png?branch=master)](https://travis-ci.org/mattn/go-utr50)
-[![Coverage Status](https://coveralls.io/repos/mattn/go-utr50/badge.png?branch=HEAD)](https://coveralls.io/r/mattn/go-utr50?branch=HEAD)
+[![Coverage Status](https://coveralls.io/repos/github/mattn/go-utr50/badge.svg?branch=master)](https://coveralls.io/github/mattn/go-utr50?branch=master)
 [![GoDoc](https://godoc.org/github.com/mattn/go-utr50?status.svg)](http://godoc.org/github.com/mattn/go-utr50)
 [![Go Report Card](https://goreportcard.com/badge/github.com/mattn/go-utr50)](https://goreportcard.com/report/github.com/mattn/go-utr50)
 
