@@ -38,3 +38,16 @@ func TestSimple(t *testing.T) {
 		}
 	}
 }
+
+func TestFatal(t *testing.T) {
+	p := RuneProp(0x3FFFF)
+	if p != N {
+		t.Fatalf("want %q, got %q", N, p)
+	}
+	p = Prop(999)
+	got := fmt.Sprint(p)
+	want := "Prop(999)"
+	if got != want {
+		t.Fatalf("want %q, got %q", want, got)
+	}
+}
