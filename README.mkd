@@ -12,7 +12,7 @@ Usage
 -----
 
 ```go
-utr50.Prop("ー") == "Tr"
+utr50.RuneProp("ー") == "Tr"
 ```
 
 
