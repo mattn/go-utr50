@@ -1,6 +1,7 @@
 package utr50
 
 //go:generate go run tool/generate.go -o table.go
+//go:generate stringer -type prop
 
 type prop int
 
