@@ -1,0 +1,27 @@
+go-utr50
+========
+
+[![Build Status](https://travis-ci.org/mattn/go-utr50.png?branch=master)](https://travis-ci.org/mattn/go-utr50)
+[![Coverage Status](https://coveralls.io/repos/mattn/go-utr50/badge.png?branch=HEAD)](https://coveralls.io/r/mattn/go-utr50?branch=HEAD)
+[![GoDoc](https://godoc.org/github.com/mattn/go-utr50?status.svg)](http://godoc.org/github.com/mattn/go-utr50)
+[![Go Report Card](https://goreportcard.com/badge/github.com/mattn/go-utr50)](https://goreportcard.com/report/github.com/mattn/go-utr50)
+
+Provides functions to get fixed width of the character or string.
+
+Usage
+-----
+
+```go
+utr50.Prop("ー") == "Tr"
+```
+
+
+Author
+------
+
+Yasuhiro Matsumoto (a.k.a. mattn)
+
+License
+-------
+
+under the MIT License: http://mattn.mit-license.org/2017
