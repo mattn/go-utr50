@@ -6,7 +6,7 @@ go-utr50
 [![GoDoc](https://godoc.org/github.com/mattn/go-utr50?status.svg)](http://godoc.org/github.com/mattn/go-utr50)
 [![Go Report Card](https://goreportcard.com/badge/github.com/mattn/go-utr50)](https://goreportcard.com/report/github.com/mattn/go-utr50)
 
-Provides functions to get fixed width of the character or string.
+Provides functions to get Virtical Text Layer property of the character.
 
 Usage
 -----
